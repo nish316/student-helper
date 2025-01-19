@@ -47,14 +47,12 @@ tutors = [
 def find_tutor():
     try:
         data = request.json
-        selected_subject = data.get("subject", "").lower()  # Get subject from request
-
-        # Find tutors that match the selected subject
+        selected_subject = data.get("subject", "").lower()
         matching_tutors = [tutor for tutor in tutors if tutor["subject"] == selected_subject]
 
         if matching_tutors:
             import random
-            selected_tutor = random.choice(matching_tutors)  # Pick a random tutor
+            selected_tutor = random.choice(matching_tutors)
             return jsonify({"tutor": selected_tutor})
         else:
             return jsonify({"error": "No available tutors for this subject."}), 404
