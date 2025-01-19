@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Helper App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Student Helper App</h1>
+            <p>Select a math topic and ask your question!</p>
+        </header>
+
+        <!-- Subject Selection -->
+        <div class="subject-selection">
+            <label for="subjects">Choose a topic:</label>
+            <select id="subjects">
+                <option value="algebra">Algebra</option>
+                <option value="geometry">Geometry</option>
+                <option value="calculus">Calculus</option>
+                <option value="statistics">Statistics</option>
+            </select>
+        </div>
+
+        <!-- User Input for Question -->
+        <div class="question-section">
+            <label for="question">Ask your question:</label>
+            <input type="text" id="question" placeholder="Enter your question here">
+            <button id="askButton">Ask Question</button>
+        </div>
+
+        <!-- AI Response -->
+        <div class="response-section">
+            <h3>AI Response:</h3>
+            <p id="aiResponse">Your answer will appear here...</p>
+        </div>
+
+        <!-- Connect with Tutor -->
+        <div class="connect-section">
+             <button id="connectButton">Connect with a Tutor</button>
+        <div id="tutorResponse" class="response-section" style="display: none;">
+            <h3>Available Tutor:</h3>
+             <p id="tutorInfo">Finding a tutor...</p>
+    </div>
+</div>
+
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

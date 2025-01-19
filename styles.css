@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.1em;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 2.4em;
+    color: #4C8BF5;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+/* Subject Selection */
+.subject-selection {
+    margin: 25px 0;
+}
+
+.subject-selection select {
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.subject-selection select:hover {
+    background-color: #f1f1f1;
+}
+
+/* Question Input */
+.question-section {
+    margin: 20px 0;
+}
+
+.question-section input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-section input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(72, 126, 246, 0.3);
+    outline: none;
+}
+
+.question-section button {
+    background-color: #4C8BF5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-section button:hover {
+    background-color: #3a7adf;
+}
+
+/* AI Response Section */
+.response-section {
+    margin: 20px 0;
+}
+
+.response-section h3 {
+    font-size: 1.3em;
+    color: #4C8BF5;
+    margin-bottom: 12px;
+}
+
+.response-section p {
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f2f8ff;
+    padding: 15px;
+    border-radius: 12px;
+    min-height: 70px;
+    border: 2px solid #e1e9f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Connect with Tutor */
+.connect-section {
+    margin-top: 30px;
+}
+
+.connect-section button {
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-section button:hover {
+    background-color: #e0a800;
+}
+
